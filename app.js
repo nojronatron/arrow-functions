@@ -206,17 +206,19 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scope();
+joe.scope();
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scopeArrow();
+joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+//  'this' is the Student object, joe.
+
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+//  'this' is the Browser (Window), and parent to the Document/DOM
+
 // 3. Explain why "this" is different when an arrow function is used.
-//
+//  Arrow Functions "reset" keyword 'this', breaking the usual scope of the containing function.
